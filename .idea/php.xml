@@ -128,6 +128,7 @@
       <path value="$PROJECT_DIR$/src/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />

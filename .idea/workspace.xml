@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="912256f5-9e9a-4353-95e8-46700548334f" name="Changes" comment="" />
+    <list default="true" id="912256f5-9e9a-4353-95e8-46700548334f" name="Changes" comment="up">
+      <change afterPath="$PROJECT_DIR$/src/app/App/Http/Requests/AbstractIndexRequestWithFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/App/Repositories/AbstractRepositoryWithFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/App/Repositories/Traits/FilterTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Domain/Book/BookRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Domain/Book/Request/IndexBookRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/layouts/paginate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Domain/Book/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Domain/Book/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/book/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/book/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +24,34 @@
     <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ilyaBob&quot;
+  }
+}</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="add adminlte" />
+        <option name="rewordedMessage" value="up" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="78b322df922e5968b0f8e2ce22b1922d944a3284" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ilyaBob/audiokniga.git&quot;,
+    &quot;accountId&quot;: &quot;a6729aa6-f2f3-47c1-9c20-448b26ef3ceb&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/.env" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/App/View/Components/Forms/Input.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -130,6 +166,7 @@
       <path value="$PROJECT_DIR$/src/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -140,22 +177,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ilya/Рабочий стол/test/bookSite&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "last_opened_file_path": "/home/ilya/Рабочий стол/test/dockerTest/src/resources/views/admin/layouts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/views/admin/layouts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/resources/views/admin/book" />
+      <recent name="$PROJECT_DIR$/src/resources/views/components/forms" />
       <recent name="$PROJECT_DIR$/src/database/migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/Domain/Book" />
+      <recent name="$PROJECT_DIR$/src/public" />
     </key>
   </component>
   <component name="RunManager">
@@ -185,11 +231,93 @@
       <workItem from="1745167670378" duration="182000" />
       <workItem from="1745399711032" duration="13680000" />
       <workItem from="1745462008518" duration="1275000" />
-      <workItem from="1745751776383" duration="545000" />
+      <workItem from="1745751776383" duration="3837000" />
+      <workItem from="1745843678488" duration="8743000" />
+      <workItem from="1745852437532" duration="71000" />
+      <workItem from="1745852515778" duration="6124000" />
+      <workItem from="1745926966685" duration="9940000" />
     </task>
+    <task id="LOCAL-00001" summary="add template">
+      <option name="closed" value="true" />
+      <created>1745763594115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745763594115</updated>
+    </task>
+    <task id="LOCAL-00002" summary="up">
+      <option name="closed" value="true" />
+      <created>1745847122919</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745847122919</updated>
+    </task>
+    <task id="LOCAL-00003" summary="up">
+      <option name="closed" value="true" />
+      <created>1745927232736</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745927232736</updated>
+    </task>
+    <task id="LOCAL-00004" summary="up">
+      <option name="closed" value="true" />
+      <created>1745927655524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745927655524</updated>
+    </task>
+    <task id="LOCAL-00005" summary="up">
+      <option name="closed" value="true" />
+      <created>1745927821269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745927821269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add template" />
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/resources/views/admin/main.blade.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/resources/views/admin/main.blade.php</url>
+          <line>262</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/resources/views/admin/book/create.blade.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
