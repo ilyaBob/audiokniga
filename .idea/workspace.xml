@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="912256f5-9e9a-4353-95e8-46700548334f" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/src/app/App/Http/Requests/AbstractIndexRequestWithFilter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/App/Repositories/AbstractRepositoryWithFilter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/App/Repositories/Traits/FilterTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Domain/Book/BookRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Domain/Book/Request/IndexBookRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/admin/layouts/paginate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Domain/Book/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Domain/Book/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/views/admin/book/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/admin/book/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Domain/Book/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Domain/Book/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
       <RewordedCommitMessageMapping>
-        <option name="originalMessage" value="add adminlte" />
+        <option name="originalMessage" value="up" />
         <option name="rewordedMessage" value="up" />
       </RewordedCommitMessageMapping>
     </option>
@@ -166,7 +165,8 @@
       <path value="$PROJECT_DIR$/src/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/src/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/src/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/src/vendor/barryvdh/laravel-ide-helper" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -177,20 +177,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.laravel-idea.search-composer-json": "true",
-    "last_opened_file_path": "/home/ilya/Рабочий стол/test/dockerTest/src/resources/views/admin/layouts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ilya/Рабочий стол/test/dockerTest/src/resources/views/admin/layouts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/resources/views/admin/layouts" />
@@ -235,7 +235,7 @@
       <workItem from="1745843678488" duration="8743000" />
       <workItem from="1745852437532" duration="71000" />
       <workItem from="1745852515778" duration="6124000" />
-      <workItem from="1745926966685" duration="9940000" />
+      <workItem from="1745926966685" duration="11592000" />
     </task>
     <task id="LOCAL-00001" summary="add template">
       <option name="closed" value="true" />
@@ -277,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745927821269</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="up">
+      <option name="closed" value="true" />
+      <created>1745939875757</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745939875757</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
