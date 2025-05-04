@@ -2,9 +2,11 @@
 
 namespace Domain\Book\Request;
 
+use Domain\Book\Book;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Str;
 
+/** @mixin Book */
 class AbstractBookRequest extends FormRequest
 {
     public function authorize(): bool
@@ -12,9 +14,9 @@ class AbstractBookRequest extends FormRequest
         return true;
     }
 
-    protected function prepareForValidation()
+    protected function prepareForValidation(): void
     {
-        return $this->merge([
+         $this->merge([
             'slug' => Str::slug($this->title),
             'image_id' => 1,
             'is_active' => isset($this->is_active)

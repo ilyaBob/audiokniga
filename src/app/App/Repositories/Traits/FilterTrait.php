@@ -8,17 +8,17 @@ trait FilterTrait
 {
     public function filterParamHandle(array $attribute, Builder $builder): Builder
     {
-        return $this->filterBySort($attribute, $builder);
+        $builder = $this->filterBySort($attribute, $builder);
+        return $builder;
     }
 
-    protected function filterBySort(array $attribute, Builder $builder): Builder
+    protected function filterBySort(array $attribute, Builder $builder)
     {
         if (isset($attribute['sort'])) {
-            if ($attribute['sort'][1] == 'ASC') {
-                return $builder->orderBy($attribute['sort'][0], 'ASC');
-            } else {
-                return $builder->orderBy($attribute['sort'][0], 'DESC');
-            }
+            $column = $attribute['sort'][0];
+            $direction = strtoupper($attribute['sort'][1]) === 'ASC' ? 'ASC' : 'DESC';
+
+            return $builder->orderBy($column, $direction);
         }
 
         return $builder->orderBy($this->getTable($builder) . '.id', 'DESC');
